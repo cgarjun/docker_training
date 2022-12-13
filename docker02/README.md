@@ -32,6 +32,9 @@ docker run -it ubuntu bash
 # you can run linux commands here inside the node for example to install htop command you can run
 apt-get update
 apt-get install htop
+
+docker run -it ubuntu echo hello
+docker run -it ubuntu /bin/bash
 ```
 ### Running conatiner in detached mode ###
 ```

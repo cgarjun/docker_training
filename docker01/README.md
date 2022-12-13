@@ -3,6 +3,7 @@
 ## Install docker on a linux centos distro ##
 
 ### Install core lib on linux ###
+Note: The chrony service is really important when we start doing distributed cluster
 ```
 sudo dnf -y install epel-release
 sudo dnf -y install chrony
@@ -41,4 +42,9 @@ sudo systemctl enable docker
 sudo systemctl status docker
 sudo systemctl status firewalld
 sudo systemctl status chronyd
+```
+When running yum / dnf commands if you are getting UTF error run the below commands
+```
+dnf install glibc-langpack-en
+localectl set-locale LANG=en_US.UTF-8
 ```
