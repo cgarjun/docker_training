@@ -45,6 +45,9 @@ COPY app /data/app
 Copy direcotry and also capable of running commands like run.
 Recommend not to use this unless, its really necessary, all work should be doable with COPY and RUN, this is good to know for legacy reasons.
 #### ENV ####
+```docker
+ENV hello "world"
+```
 #### USER ####
 #### WORKDIR ####
 This is only important when you want to deal with relative paths for some reasons. This is equivalent to setting current working directory in python
