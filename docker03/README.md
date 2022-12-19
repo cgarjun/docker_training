@@ -14,6 +14,9 @@ docker run -d -p 80:80 nginx
 ### Open System ports ###
 ```
 firewall-cmd --zone=public --add-port=8080/tcp --permanent
+
+# reload the firewal service
+firewall-cmd --reload
 ```
 on ubuntu based hosts machines use ufw (uncomplicated firewall), ufw is available on centos also
 ```
